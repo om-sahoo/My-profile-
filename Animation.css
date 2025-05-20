@@ -1,0 +1,35 @@
+/* Animation for sliding in cards */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animate each project card */
+.project {
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0; /* Hidden before animation */
+}
+
+.project:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.project:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.project:nth-child(3) {
+  animation-delay: 0.6s;
+}
+/* Add more nth-child if more projects exist */body {
+  background-color: #FFFFFF;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 20px;
+}

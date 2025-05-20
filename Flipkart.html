@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Flipkart</h1>
+    <input type="text" id="search" placeholder="Search for products">
+    <button onclick="searchProducts()">Search</button>
+    <div class="cart">Cart (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <div class="categories">
+      <button onclick="filterCategory('All')">All</button>
+      <button onclick="filterCategory('Mobiles')">Mobiles</button>
+      <button onclick="filterCategory('Fashion')">Fashion</button>
+    </div>
+
+    <div id="products"></div>
+      <!-- Products will be rendered here -->
+    </div>
+  </main>
+...
+<div id="products"></div>
+
+<script src="script.js"></script>
+
+  
+</body>
+</html>
